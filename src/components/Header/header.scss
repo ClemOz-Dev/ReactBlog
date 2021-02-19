@@ -1,0 +1,22 @@
+@use 'src/styles/vars';
+
+.header {
+  width: 100%;
+  height: 15%;
+  border: vars.$alt-color;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px vars.$alt-color solid ;
+  border-top: 1px vars.$alt-color solid ;
+
+  a {
+    color: vars.$dark-color;
+    padding: 2.5rem;
+
+    &:hover {
+      color: vars.$primary-color;
+    }
+  }
+}

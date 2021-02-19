@@ -1,0 +1,58 @@
+@use 'src/styles/vars';
+
+.posts {
+  width: 100%;
+  min-height: 70%;
+
+
+  .main-title {
+    color: vars.$primary-color;
+    font-family: vars.$title-font;
+    font-weight: vars.$title-font-weight;
+    padding-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .post-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .post {
+      padding: 2rem;
+      margin: 2rem;
+      width: 37%;
+      height: 20%;
+      text-align: left;
+
+      & hover {
+        background-color: vars.$post-hover-color;
+      }
+
+      .title {
+        color: vars.$title-color;
+        font-family: vars.$title-font;
+        font-weight: vars.$title-font-weight;
+        font-size: 1.5rem;        
+      }
+
+      .category {
+        background-color: #fff;
+        color: vars.$post-text-color; 
+        display: inline-block;       
+        margin-bottom: 0.5rem;
+        margin-top: .5rem;
+        padding:0.3rem;
+        background-color: vars.$primary-color;
+      }
+
+      .content {
+        color: vars.$post-text-color;
+      }
+    }
+  }
+
+}
