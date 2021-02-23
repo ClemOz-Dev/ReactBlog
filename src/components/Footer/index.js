@@ -1,18 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import './footer.scss';
 
-const Footer = () => {
+// &nbsp; => entité HTML, représente un espace insécable, on recommande au
+// navigateur de ne pas sauter une ligne à cet endroit
 
-  return (
-    <p className="footer">
-      DevOfThrones, le blog du développeur React - 2020 ©
-    </p>
-  );
- 
-};
-
-
+const Footer = () => (
+  <footer className="footer">
+    <p>DevOfThrones, le blog du développeur React&nbsp;- 2020&nbsp;&copy;</p>
+  </footer>
+);
 
 export default Footer;
